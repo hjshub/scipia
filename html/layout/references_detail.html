@@ -1,0 +1,803 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>자료실</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/archive.css">
+
+	<!-- base URL for script -->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	
+	<!--S js-->
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/gnb.js"></script>
+	<script src="../js/jquery.dotdotdot.js"></script>
+	<script src="../js/archive.js"></script>
+	<!--E js-->
+	</head>
+
+	<body>
+	
+	<!--skipNavigation-->
+	<dl id="skipToContent">
+		<dt class="hiddenTxt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#content-body">본문으로 바로가기</a></dd>
+		<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+	</dl>
+	
+	<!-- Top -->
+	<!--s m_subMenu-->
+	<div id="m_subMenu">
+		<div class="mobile_gnb">
+			<div class="m_logoArea"><img src="../img/main_a/logo_kr.png" alt="로고"/></div>
+			<div class="m_menu on" onclick="M_menuOn('off');">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<a class="smartGuide" href="#">스마트관람안내</a>
+		</div>
+		<ul class="m_log innerWrap">
+			<li><a href="#">로그인</a></li>
+			<li><a href="#">회원가입</a></li>
+			<!-- 
+			<li><a href="#">로그아웃</a></li>
+			<li><a href="#">마이페이지</a></li>
+			 -->
+		</ul>
+		<div class="m_search">
+			<span class="search">
+				<form id="totalSearchForm2" action="/" method="GET">
+					<input id="searchKey2" name="searchKey2" type="hidden"/>
+					<label for="totalSearchText2" id="total-search2">
+						<input id="totalSearchText2" type="text" title="국립과천과학관 관련 검색어 입력" placeholder="검색어를 입력하세요."/>
+					</label>
+					<button type="button" class="btn_search">검색</button>
+				</form>
+			</span>
+		</div>
+		<ul class="m-cate-list">
+			<li class="active">
+				<span>관람안내</span>
+				<ul class="m_sub01">
+					<li class="active">
+						<a class="isList" href="#">이용안내</a>
+						<ul>
+							<li><a href="#">관람시간 및 요금</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">회원제 안내</a>
+						<ul>
+							<li><a href="#">연간회원</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">시설안내</a>
+						<ul>
+							<li><a href="#">시설대관</a></li>
+							<li><a href="#">편의시설</a></li>
+							<li><a href="#">식음시설</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">단체관람</a></li>
+					<li><a class="isList" href="#">추천관람코스</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>전시관</span>
+				<ul class="m_sub02">
+					<li><a class="isList" href="#">기초과학관</a></li>
+					<li><a class="isList" href="#">자연사관</a></li>
+					<li>
+						<a class="isList" href="#">한국과학문명관</a>
+						<ul>
+							<li><a href="#">한국과학문명관</a></li>
+							<li><a href="#">명예의 전당</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">첨단기술관</a></li>
+					<li><a class="isList" href="#">미래상상SF관</a></li>
+					<li><a class="isList" href="#">어린이탐구체험관</a></li>
+					<li>
+						<a class="isList" href="#">천체관</a>
+						<ul>
+							<li><a href="#">천체투영관</a></li>
+							<li><a href="#">천체관측소</a></li>
+							<li><a href="#">스페이스월드</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">곤충생태관</a>
+						<ul>
+							<li><a href="#">곤충생태관</a></li>
+							<li><a href="#">자연생태공원</a></li>
+							<li><a href="#">공룡역사광장</a></li>
+							<li><a href="#">옥외전시장</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">전시해설</a>
+						<ul>
+							<li><a href="#">예약&#x2F;안내</a></li>
+							<li><a href="#">과학해설사소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">체험전시실</a>
+						<ul>
+							<li><a href="#">전시관별 예약안내</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>교육</span>
+				<ul class="m_sub03">
+					<li>
+						<a class="isList" href="#">이용안내</a>
+						<ul>
+							<li><a href="#">교육안내</a></li>
+							<li><a href="#">교육공지</a></li>
+							<li><a href="#">수업게시판</a></li>
+							<li><a href="#">환불안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">청소년개인과정</a>
+						<ul>
+							<li><a href="#">창의과학아카데미</a></li>
+							<li><a href="#">방학특별과정</a></li>
+							<li><a href="#">천문우주융합교실</a></li>
+							<li><a href="#">코스모스쿨</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">청소년단체과정</a>
+						<ul>
+							<li><a href="#">창의과학 체험활동</a></li>
+							<li><a href="#">진로탐구 자유학기</a></li>
+							<li><a href="#">천문우주 자유학기</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">성인과정</a>
+						<ul>
+							<li><a href="#">청춘과학아카데미</a></li>
+							<li><a href="#">학부모과학 아카데미</a></li>
+							<li><a href="#">학부모과학산책</a></li>
+							<li><a href="#">교사연수</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">체험캠프</a>
+						<ul>
+							<li><a href="#">과학희망캠프</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>행사</span>
+				<ul class="m_sub04">
+					<li><a class="isList" href="#">행사</a></li>
+					<li><a class="isList" href="#">특별기획전</a></li>
+					<li><a class="isList" href="#">공연</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>예약</span>
+				<ul class="m_sub05">
+					<li><a class="isList" href="#">교육</a></li>
+					<li><a class="isList" href="#">체험</a></li>
+					<li><a class="isList" href="#">행사</a></li>
+					<li><a class="isList" href="#">천체</a></li>
+					<li><a class="isList" href="#">창작카페</a></li>
+					<li><a class="isList" href="#">자원봉사</a></li>
+					<li><a class="isList" href="#">연간회원전용</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>고객소통</span>
+				<ul class="m_sub06">
+					<li>
+						<a class="isList" href="#">과학관소식</a>
+						<ul>
+							<li><a href="#">공지&#x2F;공고</a></li>
+							<li><a href="#">카드뉴스</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="#">현장스케치</a></li>
+							<li><a href="#">과학관동영상</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">고객서비스</a>
+						<ul>
+							<li><a href="#">고객서비스현장</a></li>
+							<li><a href="#">평가결과</a></li>
+							<li><a href="#">연간방문객</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">안전관리</a>
+						<ul>
+							<li><a href="#">관람객대피</a></li>
+							<li><a href="#">안전사고수칙</a></li>
+							<li><a href="#">안전신문고</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">정보나눔터</a>
+						<ul>
+							<li><a href="#">일반자료실</a></li>
+							<li><a href="#">규정자료실</a></li>
+							<li><a href="#">자주묻는질문</a></li>
+							<li><a href="#">의견수렴</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">전자민원</a></li>
+					<li><a class="isList" href="#">분실물목록</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>과학관소개</span>
+				<ul class="m_sub07">
+					<li>
+						<a class="isList" href="#">기관안내</a>
+						<ul>
+							<li><a href="#">관장소개</a></li>
+							<li><a href="#">연혁</a></li>
+							<li><a href="#">조직 및 업무</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">찾아오시는 길</a>
+						<ul>
+							<li><a href="#">교통안내</a></li>
+							<li><a href="#">주차안내</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">주변정보</a></li>
+					<li><a class="isList" href="#">관련사이트</a></li>
+					<li><a class="isList" href="#">과학과기술사료관</a></li>
+					<li><a class="isList" href="#">사이트맵</a></li>
+					<li><a class="isList" href="#">수도권과학관</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>정보공개</span>
+				<ul class="m_sub08">
+					<li><a class="isList" href="#">정보공개제도안내</a></li>
+					<li><a class="isList" href="#">사전정보공개</a></li>
+					<li><a class="isList" href="#">정보목록</a></li>
+					<li><a class="isList" href="#">정보공개창구</a></li>
+					<li><a class="isList" href="#">공공데이터 개방</a></li>
+					<li><a class="isList" href="#">공개정보자료실</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>과학자료실</span>
+				<ul class="m_sub09">
+					<li><a class="isList" href="#">전시</a></li>
+					<li><a class="isList" href="#">해설</a></li>
+					<li><a class="isList" href="#">교육</a></li>
+					<li><a class="isList" href="#">행사</a></li>
+					<li><a class="isList" href="#">기획전</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="m-quick-list">
+			<ul class="innerWrap">
+				<li class="m-sns-link">
+					<a href="http://nsm2010.blog.me/" target="_blank" rel="noopener noreferrer" class="btn_naver hiddenTxt">네이버 블로그 바로가기</a>
+					<a href="https://twitter.com/scientorium?lang=ko" target="_blank" rel="noopener noreferrer" class="btn_twitter hiddenTxt">트위터 바로가기</a>
+					<a href="https://www.facebook.com/scientorium/" target="_blank" rel="noopener noreferrer" class="btn_facebook hiddenTxt">페이스북 바로가기</a>
+					<a href="https://www.youtube.com/user/gnsmscience" target="_blank" rel="noopener noreferrer" class="btn_utube hiddenTxt">유튜브 바로가기</a>
+				</li>
+				<li>
+					<a href="#">ENG</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--E m_subMenu-->	
+	
+	<div id="layout_cont">
+		<!--S #navTop--> 
+		<header id="navTop" class="innerWrap">
+		 	<div id="topArea">
+		 		<!--S topMenu-->
+				<div class="topMenu innerWrap">						
+					<div class="hgroup01 innerWrap">
+						<div class="topWrapper">
+							<ul class="log innerWrap">
+								<li>
+									<div class="basic-text hidden-xs">
+										미래를 상상하며 행복을 주는 "과학체험관"
+									</div>
+								</li>
+								<li>								
+									<form id="logout-form" action="${logoutUrl}" method="post" style="display: none">
+									  <input type="submit" value="Log out" />
+									  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+									</form>
+									<!--
+									<a href="#" id="logout-btn">로그아웃</a>
+									<a href="#">마이페이지</a>
+									-->
+									<a href="#">회원가입</a>
+									<a href="#">로그인</a>
+									<a href="#">사이트맵</a>
+									<a href="#">ENG</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hgroup02 innerWrap">
+						<div class="topWrapper">
+							<div class="logoArea"><a href="https://www.sciencecenter.go.kr/scipia/"><img src="../img/main_a/logo_kr.png" alt="로고"/></a></div>
+							<span class="search">
+								<form id="totalSearchForm" action="${totalSearchUrl }" method="GET">
+									<input id="searchKey" name="searchKey" type="hidden" />
+									<label for="totalSearchText" id="total-search">
+										<input id="totalSearchText" type="text" title="국립과천과학관 관련 검색어 입력" placeholder="검색어를 입력하세요."/>
+									</label>
+									<button type="button" class="btn_search">검색</button>
+								</form>
+							</span>
+							<div class="sns-link">
+								<a href="http://nsm2010.blog.me/" target="_blank" rel="noopener noreferrer" class="btn_naver">
+									<img src="../img/main/renewal/ico_blog.png" alt="Naver Blog"/>
+								</a>
+								<a href="https://twitter.com/scientorium?lang=ko" target="_blank" rel="noopener noreferrer" class="btn_twitter">
+									<img src="../img/main/renewal/ico_twitter.png" alt="Twitter"/>
+								</a>
+								<a href="https://www.facebook.com/scientorium/" target="_blank" rel="noopener noreferrer" class="btn_facebook">
+									<img src="../img/main/renewal/ico_facebook.png" alt="Facebook"/>
+								</a>
+								<a href="https://www.youtube.com/user/gnsmscience" target="_blank" rel="noopener noreferrer" class="btn_utube">
+									<img src="../img/main/renewal/ico_ytube.png" alt="youtube"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--E topMenu-->
+									
+				<div class="nav-wrapper">
+					<!--S defaultWeb-->
+				 	<div class="topWrapper defaultWeb" id="gnb">
+				 		<div class="list_bg"></div>
+						<ul class="cate-list innerWrap">
+							<li>
+								<a class="listName" href="#">관람안내</a>
+								<div class="sub01">
+									<ul>
+										<li><span><a href="#">이용안내</a></span></li>
+										<li><span><a href="#">회원제 안내</a></span></li>
+										<li><span><a href="#">시설안내</a></span></li>
+										<li><span><a href="#">단체관람</a></span></li>
+										<li><span><a href="#">추천관람코스</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">전시관</a>
+								<div class="sub02">
+									<ul>
+										<li><span><a class="evScroll" href="#contents01">기초관학관</a></span></li>
+										<li><span><a href="#">자연사관</a></span></li>
+										<li><span><a href="#">한국과학문명관</a></span></li>
+										<li><span><a href="#">첨단기술관</a></span></li>
+										<li><span><a href="#">미래상상SF관</a></span></li>
+										<li><span><a href="#">어린이탐구체험관</a></span></li>
+										<li><span><a href="#">천체관</a></span></li>
+										<li><span><a href="#">곤충생태관</a></span></li>
+										<li><span><a href="#">전시해설</a></span></li>
+										<li><span><a href="#">체험전시물</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">교육</a>
+								<div class="sub03">
+									<ul>
+										<li><span><a href="#">이용안내</a></span></li>
+										<li><span><a href="#">청소년개인과정</a></span></li>
+										<li><span><a href="#">청소년단체과정</a></span></li>
+										<li><span><a href="#">성인과정</a></span></li>
+										<li><span><a href="#">체험캠프</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">행사</a>
+								<div class="sub04">
+									<ul>
+										<li><span><a href="#">행사</a></span></li>
+										<li><span><a href="#">특별기획전</a></span></li>
+										<li><span><a href="#">공연</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">예약</a>
+								<div class="sub05">
+									<ul>
+										<li><span><a href="#">교육</a></span></li>
+										<li><span><a href="#">체험</a></span></li>
+										<li><span><a href="#">행사</a></span></li>
+										<li><span><a href="#">천체</a></span></li>
+										<li><span><a href="#">창작카페</a></span></li>
+										<li><span><a href="#">자원봉사</a></span></li>
+										<li><span><a href="#">연간회원전용</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">고객소통</a>
+								<div class="sub06">
+									<ul>
+										<li><span><a href="#">과학관소식</a></span></li>
+										<li><span><a href="#">고객서비스</a></span></li>
+										<li><span><a href="#">안전관리</a></span></li>
+										<li><span><a href="#">정보나눔터</a></span></li>
+										<li><span><a href="#">전자민원</a></span></li>
+										<li><span><a href="#">분실물목록</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">과학관소개</a>
+								<div class="sub07">
+									<ul>
+										<li><span><a href="#">기관안내</a></span></li>
+										<li><span><a href="#">찾아오시는길</a></span></li>
+										<li><span><a href="#">주변정보</a></span></li>
+										<li><span><a href="#">관련사이트</a></span></li>
+										<li><span><a href="#">과학과기술사료관</a></span></li>
+										<li><span><a href="#">사이트맵</a></span></li>
+										<li><span><a href="#">수도권과학관</a></span></li>
+										
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">정보공개</a>
+								<div class="sub08">
+									<ul>
+										<li><span><a href="#">정보공개제도안내</a></span></li>
+										<li><span><a href="#">사전정보공개</a></span></li>
+										<li><span><a href="#">정보목록</a></span></li>
+										<li><span><a href="#">정보공개청구</a></span></li>
+										<li><span><a href="#">공공데이터 개방</a></span></li>
+										<li><span><a href="#">공개정보자료실</a></span></li>
+										<li><span><a href="#">정책연구자료실</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">과학자료실</a>
+								<div class="sub09">
+									<ul>
+										<li><span><a href="#">전시</a></span></li>
+										<li><span><a href="#">해설</a></span></li>
+										<li><span><a href="#">교육</a></span></li>
+										<li><span><a href="#">행사</a></span></li>
+										<li><span><a href="#">기획전</a></span></li>
+									</ul>
+								</div>	
+							</li>
+						</ul>
+					</div> 
+					<!--E defaultWeb-->
+					<div class="mobile_gnb">
+						<div class="m_logoArea"><img src="../img/main_a/logo_kr.png" alt="로고"/></div>
+						<div class="m_menu" onclick="M_menuOn('on');">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a class="smartGuide" href="#">스마트관람안내</a>
+					</div>					
+				</div>
+			</div>	
+			<!--topArea END-->		
+		</header>
+		<!--E #navTop--> 
+		<!-- //Top -->
+		
+		<!-- Mid -->
+		<div id="content-body" class="references">
+			<!-- 자료실 상세 컨텐츠 영역 -->	
+			<div id="refHeader">
+				<div class="bg_bar navy"></div>
+				<div class="mid_contents">
+					<h3 class="inlinebox">과학자료실</h3>
+				</div>
+			</div>
+			 <!-- //#refHeader -->
+			
+			<div class="mid_contents">
+				<div class="refCotentsDetail">
+					<section class="contentsHead">
+						<div class="title">달밤과학파티 첫번째! &ldquo;가짜과학의 홍수속에서 살아남기&rdquo;</div>
+						<article class="post innerWrap">
+							<div class="poster"><img src="https://www.sciencecenter.go.kr/scipia/File/110062/MAIN_BANNERS/83/83.gif" alt="달밤과학파티 첫번째! 가짜과학의 홍수속에서 살아남기"></div>
+							<div class="postInfo">
+								<div class="info_box">
+									<b class="cateTag type04">행사</b>
+									<ul>
+										<li><em>일시</em><b>2019. 08. 12 ~ 2019. 09. 01</b></li>
+										<li><em>시간</em><b>16 : 00  ~ 18 : 00</b></li>
+										<li><em>장소</em><b>중앙홀 1층</b></li>
+										<li><em>참고</em><b>매주 금요일만 파티가 진행됩니다. (19세 이상 참여가능)</b></li>
+									</ul>
+									<span class="etc">
+										<a href="#">행사홈페이지 바로가기</a>
+										<em><img src="../img/reference/bg/qr_sample.png" alt="QR코드" /></em>
+									</span>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section class="contentsBody">
+						<div class="detail_cTx">
+							<p>[ 첫번째 달밤과학파티 ]</p>
+							<p>혈액형 성격설을 믿으시나요? 페로몬 향수는 정말로 효과가 있을까요?</p>
+							<p>쏟아지는 정보들 사이에서 우리는 어떻게 과학으로 중심을 잡을 수 있을까요?</p>
+							<p>&nbsp;</p>
+							<p>☆ 일시 : 2018년 8월 18일 저녁 6시~9시</p>
+							<p>&nbsp;</p>
+							<p>★ 주제 : 가짜과학의 홍수 속에서 살아남기</p>
+							<p>&nbsp;</p>
+							<p>☆ 드레스코드 : RED</p>
+							<p>&nbsp;</p>
+							<p>★ 구성</p>
+							<p>- 달밤토크쇼 :  김근수(연세대 물리학과 교수), 이용(팟캐스터). 여인형(동국대 화학과 교수)</p>
+							<p>- 심리테스크 결과는 왜 다 내 이야기같을까? (바넘효과)</p>
+							<p>- 게르마늄 건강설의 시작</p>
+							<p>- SNS 속 가짜과학 제품들 난이도별 구분법</p>
+							<p>- 육각수, 산소수, 이온수 중 진짜 효과있는 물은 무엇?</p>
+							<p>- 화제를 불러일으켰던 페로몬 향수의 진실</p>
+							<p>- 전시관 투어 : #1.  고생물 투어 - 최초의 생명체와 고생대의 생물</p>
+							<p>#2.  SOS 투어  by 이정구(국립과천과학관 고생물학자)</p>
+							<p>- 가짜과학 아카이브 : 주변에서 쉽게 볼 수 있는 가짜과학 이미지들 총출동</p>
+							<p> - 성격유형 자가진단 테스트 : 나와 비슷한 성격에 투표하기</p>
+							<p> - 페로몬 뿌린 사람은 바로 너! : 스탭 중 페로몬 향수를 뿌렸을 것 같은 사람에게 투표하기 </p>
+							<p> - 달밤 북클럽 : 당신에게 맞는 과학책을 추천드립니다.</p>
+							<p> - 포토존 : 달밤과학파티 인증샷, 나도 과학자</p>
+							<p> - 푸드존</p>
+						</div>
+						<div class="attached_File">
+							<div class="ctxName">
+								<span class="inlinebox">첨부파일</span>
+							</div>
+							<ul class="fileList">
+								<li><a href="#">국립과천과학관_발견의 시작1.pdf</a></li>
+								<li><a href="#">국립과천과학관_발견의 시작2.pdf</a></li>
+								<li><a href="#">국립과천과학관_발견의 시작3.pdf</a></li>
+							</ul>
+						</div>
+						<div class="related_Img">
+							<div class="ctxName">
+								<span class="inlinebox">관련이미지</span>
+							</div>
+							<div class="innerWrap overWrap">
+								<ul class="Imglist" id="Imglist">
+									<li class=""><a href="#"><img src="../img/reference/picture/sample1.jpg" alt="샘플1"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample2.jpg" alt="샘플2"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample3.jpg" alt="샘플3"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample1.jpg" alt="샘플4"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample2.jpg" alt="샘플5"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample3.jpg" alt="샘플6"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample1.jpg" alt="샘플7"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample2.jpg" alt="샘플8"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample3.jpg" alt="샘플9"/></a></li>
+									<li><a href="#"><img src="../img/reference/picture/sample1.jpg" alt="샘플10"/></a></li>
+								</ul>
+								<div class="wideImg"></div>
+							</div>
+						</div>
+						<div class="related_Video">
+							<div class="ctxName">
+								<span class="inlinebox">동영상</span>
+							</div>
+							<div class="innerWrap">
+								<!-- 동영상 리스트 영역 -->
+								<dl class="Playlist">
+									<dt>PLAY LIST</dt>
+									<dd>
+										<a href="#YyzrQEpiYJw" title="[달밤과학파티] 꿈 좀 꿔 봤니"><span><em>[달밤과학파티]</em>&ldquo;이온수,알칼리수,산소수,수소수 물의비밀&rdquo;</span></a>
+										<!-- 동영상 출력 영역 -->
+										<div class="playArea"></div>
+										<!-- // 동영상 출력 영역 -->
+									</dd>
+									<dd>
+										<a href="#naWnpzoFPW0" title="[달밤과학파티] 효과적으로 밤 새는 방법"><span><em>[달밤과학파티]</em>&ldquo;SNS 아무말에 속지 않는 법 1탄&rdquo;</span></a>
+										<!-- 동영상 출력 영역 -->
+										<div class="playArea"></div>
+										<!-- // 동영상 출력 영역 -->
+									</dd>
+									<dd>
+										<a href="#f3Sx6kSsdWk" title="[달밤과학파티] 하루는 원래 24시간이 아니다?!"><span><em>[달밤과학파티]</em>&ldquo;가짜과학의 홍수 속에서 살아남기&rdquo;</span></a>
+										<!-- 동영상 출력 영역 -->
+										<div class="playArea"></div>
+										<!-- // 동영상 출력 영역 -->
+									</dd>
+								</dl>
+								<!-- // 동영상 리스트 영역 -->
+								
+								<!-- 동영상 타이틀 및 설명 -->
+								<div class="currentInfo">
+									<div>
+										<div class="caption">
+											<em>[달밤과학파티]</em>&nbsp;&ldquo;이온수, 알카리수,산소수, 수소수 물의 비밀&rdquo;
+										</div>
+										<div class="summary">
+										다이어트 식품 광고에는 꼭! 과학인듯 과학아닌 과학같은 실험 장면들이 들어있죠.<br/>
+										어디까지가 (과학적으로) 진짜이고, 어디까지가 눈속임일까요? <br/>
+										시중에 떠도는 다이어트 식품의 진실.
+										</div>
+									</div>
+									<div>
+										<div class="caption">
+											<em>[달밤과학파티]</em>&ldquo;SNS 아무말에 속지 않는 법 1탄&rdquo;
+										</div>
+										<div class="summary">
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄<br/>
+										SNS 아무말에 속지 않는 법 1탄
+										</div>
+									</div>
+									<div>
+										<div class="caption">
+											<em>[달밤과학파티]</em>&ldquo;가짜과학의 홍수 속에서 살아남기&rdquo;
+										</div>
+										<div class="summary">
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기<br/>
+										가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기 가짜과학의 홍수 속에서 살아남기
+										</div>
+									</div>
+								</div>
+								<!-- // 동영상 타이틀 및 설명 -->
+							</div>
+						</div>
+					</section>
+					<section class="contentsFoot">
+						<ul id="hashTag">
+							<li>
+								<a href="#">과학관</a>
+								<a href="#">달밤과학파티</a>
+								<a href="#">혈액형</a>
+								<a href="#">전시관투어</a>
+								<a href="#">성격설</a>
+							</li>
+							<li>
+								<span>조회수 : <b>2045</b></span>
+								<span>등록일 : <b>2019-08-01</b></span>
+							</li>	
+						</ul>
+						<div class="btn-wrapper"><a href="#">목록보기</a></div>
+					</section>
+				</div>
+			</div><!-- //mid_contents-->
+		</div><!-- //자료실 상세 컨텐츠 영역 -->
+			
+			
+		<!-- //Mid -->
+		
+		<!-- footer -->
+		<div id="footer" class="new" style="margin-top:0;">
+			<div class="top">
+				<div class="main_contents">
+					<ul>
+						<li><a href=#>이용약관</a></li>
+						<li><a href=#>개인정보 처리방침</a></li>
+						<li><a href=#>이메일 무단수신거부</a></li>
+					</ul>
+				</div>
+			</div>	
+					
+			<div class="bottom">
+				<div class="main_contents innerWrap">
+					<div class="ft_logo"><img src="../img/footer_logo_kr.png" alt="국립과천과학관"/></div>
+					<div class="ft_link">
+						<div class="address">
+							<strong>주소</strong>  13817 경기도 과천시 상하벌로 110 국립과천과학관 <br>
+							<strong>대표전화</strong>  02-3677-1500   <strong style="margin-left: 10px;">Fax</strong>  02-3677-1328
+						</div>
+						<div class="copyright">COPYRIGHT (C) Science Museum Association. All rights reserved.</div>
+					</div>
+					<div class="related_link">
+						<div class="familySite isDropDown">
+							<a href="#">관련 사이트 이동</a>
+							<ul>
+								<li>
+									<a href="http://www.president.go.kr" target="_blank" rel="noopener noreferrer" title="청와대 사이트 이동">청와대</a>
+								</li>
+								<li>
+									<a href="http://www.msit.go.kr" target="_blank" rel="noopener noreferrer" title="과학기술정보통신부 사이트 이동">과학기술정보통신부</a>
+								</li>
+								<li>
+									<a href="http://www.science.go.kr" target="_blank" rel="noopener noreferrer" title="국립중앙과학관 사이트 이동">국립중앙과학관</a>
+								</li>
+								<li>
+									<a href="http://www.csc.go.kr" target="_blank" rel="noopener noreferrer" title="국립어린이과학관 사이트 이동">국립어린이과학관</a>
+								</li>
+								<li>
+									<a href="http://www.sciencemuseum.or.kr" target="_blank" rel="noopener noreferrer" title="전국과학관길라잡이 사이트 이동">전국과학관길라잡이</a>
+								</li>
+								<li>
+									<a href="http://www.nssc.go.kr" target="_blank" rel="noopener noreferrer" title="원자력안전위원회 사이트 이동">원자력안전위원회</a>
+								</li>
+								<li>
+									<a href="http://www.copyright.or.kr" target="_blank" rel="noopener noreferrer" title="한국저작권위원회 사이트 이동">한국저작권위원회</a>
+								</li>
+								<li>
+									<a href="http://www.ibs.re.kr" target="_blank" rel="noopener noreferrer" title="기초과학연구원 사이트 이동">기초과학연구원</a>
+								</li>
+								<li>
+									<a href="http://www.isbb.or.kr" target="_blank" rel="noopener noreferrer" title="국제과학비지니스벨트 사이트 이동">국제과학비지니스벨트</a>
+								</li>
+								<li>
+									<a href="http://www.ntis.go.kr" target="_blank" rel="noopener noreferrer" title="국가과학기술지식정보서비스 사이트 이동">국가과학기술지식정보서비스</a>
+								</li>
+								<li>
+									<a href="http://www.now.go.kr" target="_blank" rel="noopener noreferrer" title="과학기술정책정보서비스 사이트 이동">과학기술정책정보서비스</a>
+								</li>
+								<li>
+									<a href="http://www.korea.kr/newsWeb/index.jsp" target="_blank" rel="noopener noreferrer" title="정책브리핑 사이트 이동">정책브리핑</a>
+								</li>
+								<li>
+									<a href="https://www.ibs.re.kr/eng.do" target="_blank" rel="noopener noreferrer" title="Institute for Basic Science 사이트 이동">Institute for Basic Science</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->		
+	</div>
+	<!-- //#layout_cont -->
+	</body>
+</html>

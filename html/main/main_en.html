@@ -1,0 +1,503 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>국립과천과학관 - 메인개편</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	
+	<!--S css-->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/eng/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/eng/main.css">
+	<!--E css-->
+
+	<!-- base URL for script -->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	
+	<!--S js-->
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/gnb.js"></script>
+	<!--E js-->
+	</head>
+
+	<body>
+	<!--skipNavigation-->
+	<dl id="skipToContent">
+		<dt class="hiddenTxt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#content-body">본문으로 바로가기</a></dd>
+		<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+	</dl>
+	
+	<!-- Top -->
+	<!--s m_subMenu-->
+	<div id="m_subMenu">
+		<div class="mobile_gnb">
+			<div class="m_logoArea"><img src="../img/main_a/logo_en.png" alt="로고"/></div>
+			<div class="m_menu on" onclick="M_menuOn('off');">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<a class="smartGuide" href="#">스마트관람안내</a>
+		</div>
+		<ul class="m_log innerWrap">
+			<li><a href="#">Sign up</a></li>
+			<li><a href="#">Login</a></li>
+			<!-- 
+			<li><a href="#">Logout</a></li>
+			<li><a href="#">mypage</a></li>
+			 -->
+		</ul>
+		<div class="m_search">
+			<span class="search">
+				<form id="totalSearchForm2" action="/" method="GET">
+					<input id="searchKey2" name="searchKey2" type="hidden"/>
+					<label for="totalSearchText2" id="total-search2">
+						<input id="totalSearchText2" type="text" title="국립과천과학관 관련 검색어 입력" placeholder="검색어를 입력하세요."/>
+					</label>
+					<button type="button" class="btn_search">검색</button>
+				</form>
+			</span>
+		</div>
+		<ul class="m-cate-list">
+			<li>
+				<span>Guide</span>
+				<ul class="m_sub01">
+					<li>
+						<a class="isList" href="#">Basic Information</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Membership</a></li>
+					<li><a href="#">Facilities</a></li>
+					<li><a href="#">Recommend Course</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Exhibition</span>
+				<ul class="m_sub02">
+					<li><a href="#">Basic Science</a></li>
+					<li><a href="#">Natural History</a></li>
+					<li><a href="#">Korea Science Civilization Hall</a></li>
+					<li><a href="#">Advanced Technology</a></li>
+					<li><a href="#">Future Imagination SF</a></li>
+					<li><a href="#">SciencePark for kids</a></li>
+					<li><a href="#">Astronomical Space</a></li>
+					<li><a href="#">Insectarium</a></li>
+					<li><a href="#">Exhibition Commentary</a></li>
+					<li><a href="#">Exhibit Experience</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Science Education</span>
+				<ul class="m_sub03">
+					<li><a href="#">Basic Information</a></li>
+					<li><a href="#">Individual Courses</a></li>
+					<li><a href="#">Group Courses</a></li>
+					<li><a href="#">Adult Courses</a></li>
+					<li><a href="#">Science Camp</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Cultural Events</span>
+				<ul class="m_sub04">
+					<li><a href="#">Special Exhibition</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Show</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Communication</span>
+				<ul class="m_sub05">
+					<li><a href="#">Customer Service</a></li>
+					<li><a href="#">Safety Management</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>About</span>
+				<ul class="m_sub06">
+					<li><a href="#">Institution Information</a></li>
+					<li><a href="#">Directions</a></li>
+					<li><a href="#">Area Information</a></li>
+					<li><a href="#">Science Technology Library</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="m-quick-list">
+			<ul class="innerWrap">
+				<li class="m-sns-link">
+					<a href="http://nsm2010.blog.me/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_naver"><em class="hiddenTxt">네이버 블로그 바로가기</em></a>
+					<a href="https://twitter.com/scientorium?lang=ko" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_twitter"><em class="hiddenTxt">트위터 바로가기</em></a>
+					<a href="https://www.facebook.com/scientorium/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_facebook"><em class="hiddenTxt">페이스북 바로가기</em></a>
+					<a href="https://www.youtube.com/user/gnsmscience" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_utube"><em class="hiddenTxt">유튜브 바로가기</em></a>
+				</li>
+				<li>
+					<a href="#">KOR</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--E m_subMenu-->	
+	
+	<div id="layout_cont">
+		<!--S #navTop--> 
+		<header id="navTop" class="innerWrap">
+		 	<div id="topArea">
+		 		<!--S topMenu-->
+				<div class="topMenu innerWrap">						
+					<div class="hgroup01 innerWrap">
+						<div class="topWrapper">
+							<ul class="log innerWrap">
+								<li>&nbsp;</li>
+								<li>								
+									<form id="logout-form" action="${logoutUrl}" method="post" style="display: none">
+									  <input type="submit" value="Log out" />
+									  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+									</form>
+									<!--
+									<a href="#" id="logout-btn">Logout</a>
+									<a href="#">mypage</a>
+									-->
+									<a href="#">Sign up</a>
+									<a href="#">Login</a>
+									<a href="#">KOR</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hgroup02 innerWrap">
+						<div class="topWrapper">
+							<div class="logoArea"><a href="https://www.sciencecenter.go.kr/scipia/"><img src="../img/main_a/logo_en.png" alt="logo"/></a></div>
+							<span class="search">
+								<form id="totalSearchForm" action="${totalSearchUrl }" method="GET">
+									<input id="searchKey" name="searchKey" type="hidden" />
+									<label for="totalSearchText" id="total-search">
+										<input id="totalSearchText" type="text" title="국립과천과학관 관련 검색어 입력" placeholder=""/>
+									</label>
+									<button type="button" class="btn_search">검색</button>
+								</form>
+							</span>
+							<div class="sns-link">
+								<a href="http://nsm2010.blog.me/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_naver">
+									<img src="../img/main/renewal/ico_blog.png" alt="Naver Blog"/>
+								</a>
+								<a href="https://twitter.com/scientorium?lang=ko" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_twitter">
+									<img src="../img/main/renewal/ico_twitter.png" alt="Twitter"/>
+								</a>
+								<a href="https://www.facebook.com/scientorium/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_facebook">
+									<img src="../img/main/renewal/ico_facebook.png" alt="Facebook"/>
+								</a>
+								<a href="https://www.youtube.com/user/gnsmscience" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_utube">
+									<img src="../img/main/renewal/ico_ytube.png" alt="youtube"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--E topMenu-->
+									
+				<div class="nav-wrapper">
+					<!--S defaultWeb-->
+				 	<div class="topWrapper defaultWeb">
+				 		<div class="list_bg"></div>
+						<ul class="cate-list innerWrap">
+							<li>
+								<a class="listName" href="#">Guide</a>
+								<div class="sub01">
+									<ul>
+										<li><span><a href="#">Basic Information</a></span></li>
+										<li><span><a href="#">Membership</a></span></li>
+										<li><span><a href="#">Facilities</a></span></li>
+										<li><span><a href="#">Recommend Course</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">Exhibition</a>
+								<div class="sub02">
+									<ul>
+										<li><span><a href="#">Basic Science</a></span></li>
+										<li><span><a href="#">Natural History</a></span></li>
+										<li><span><a href="#">Korea Science Civilization Hall</a></span></li>
+										<li><span><a href="#">Advanced Technology</a></span></li>
+										<li><span><a href="#">Future Imagination SF</a></span></li>
+										<li><span><a href="#">SciencePark for kids</a></span></li>
+										<li><span><a href="#">Astronomical Space</a></span></li>
+										<li><span><a href="#">Insectarium</a></span></li>
+										<li><span><a href="#">Exhibition Commentary</a></span></li>
+										<li><span><a href="#">Exhibit Experience</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">Science Education</a>
+								<div class="sub03">
+									<ul>
+										<li><span><a href="#">Basic Information</a></span></li>
+										<li><span><a href="#">Individual Courses</a></span></li>
+										<li><span><a href="#">Group Courses</a></span></li>
+										<li><span><a href="#">Adult Courses</a></span></li>
+										<li><span><a href="#">Science Camp</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">Cultural Events</a>
+								<div class="sub04">
+									<ul>
+										<li><span><a href="#">Special Exhibition</a></span></li>
+										<li><span><a href="#">Events</a></span></li>
+										<li><span><a href="#">Show</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">Communication</a>
+								<div class="sub05">
+									<ul>
+										<li><span><a href="#">Customer Service</a></span></li>
+										<li><span><a href="#">Safety Management</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">About</a>
+								<div class="sub06">
+									<ul>
+										<li><span><a href="#">Institution Information</a></span></li>
+										<li><span><a href="#">Directions</a></span></li>
+										<li><span><a href="#">Area Information</a></span></li>
+										<li><span><a href="#">Science Technology Library</a></span></li>
+									</ul>
+								</div>	
+							</li>
+						</ul>
+					</div> 
+					<!--E defaultWeb-->
+					<div class="mobile_gnb">
+						<div class="m_logoArea"><img src="../img/main_a/logo_en.png" alt="로고"/></div>
+						<div class="m_menu" onclick="M_menuOn('on');">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a class="smartGuide" href="#">스마트관람안내</a>
+					</div>					
+				</div>
+			</div>	
+			<!--topArea END-->		
+		</header>
+		<!--E #navTop--> 
+		
+		<script>
+			$('.dropdown-toggle').dropdown();
+			$("#logout-btn").click(function(){
+				$("#logout-form").submit();
+			});
+	
+			function AcademyChoiceFromTopMenu(Cd){
+				location.href = "<c:url value='/schedules'/>?ACADEMY_CD="+Cd+"&COURSE_CD=&endNum=100&SEMESTER_CD=&TYPE=&FLAG=&CLASS_CD=&OWNER_LIMIT_FLAG=";
+			}
+	
+			function fileDown(fileUrl){
+				var frm = document.downloadForm;
+				frm.filePath.value = fileUrl;
+				frm.action = "<c:url value='/downloadRequest'/>";
+				frm.method = 'POST';
+				frm.submit();
+			}
+			// keyword search
+			$("#totalSearchText").keypress( function(e) {
+				var keyCode = (event.keyCode ? event.keyCode : event.which);
+				if( keyCode == '13') {
+					var searchText = $(this).val();
+					$('#searchKey').val(searchText);
+					$("form[id='totalSearchForm']").submit();
+				}
+			});
+		</script>	
+		<!-- //Top -->
+		
+		<!-- Mid -->
+		<div id="content-body">
+			<section class="section01">
+				<div class="main_contents playController3">
+					<!-- 메인배너 -->
+					<div class="mainBnr">
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr01.jpg" alt="메인배너 1"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr02.jpg" alt="메인배너 2"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr03.jpg" alt="메인배너 3"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr04.jpg" alt="메인배너 4"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr05.jpg" alt="메인배너 5"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr06.jpg" alt="메인배너 6"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr07.jpg" alt="메인배너 7"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<img src="../img/main/renewal/main_bnr08.jpg" alt="메인배너 8"/>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">more</a>
+							</span>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<section class="section02">
+				<div class="pos_fixed">
+					<div class="main_contents">
+						<ul>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico01.png" alt="quick icon01"/></a></span>
+								<em><a href="#">Information</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico02.png" alt="quick icon02"/></a></span>
+								<em><a href="#">Location</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico03.png" alt="quick icon03"/></a></span>
+								<em><a href="#">Booking</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico04.png" alt="quick icon04"/></a></span>
+								<em><a href="#">Group viewing</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico05.png" alt="quick icon05"/></a></span>
+								<em><a href="#">Membership</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico06.png" alt="quick icon06"/></a></span>
+								<em><a href="#">Volunteer</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico07.png" alt="quick icon07"/></a></span>
+								<em><a href="#">Cyber Science</a></em>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</section>
+			<section class="section03">
+				<div class="main_contents">
+					<div class="schedule">
+						<h2 class="caption">Information</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<span>This month&lsquo;s<br/>Schedule</span>
+									<span class="schDay"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>2019<br/>Schedule</span>
+									<span class="schYear"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="eventArea">
+						<ul class="innerWrap">
+							<li>
+								<a href="#"><img src="../img/main/renewal/eng/bn01.jpg" alt="information banner01"/></a>
+								<span class="bnr_title">FutuRE Imagination SF Hall</span>
+							</li>
+							<li>
+								<a href="#"><img src="../img/main/renewal/eng/bn02.jpg" alt="information banner02"/></a>
+								<span class="bnr_title">Advanced Technology</span>
+							</li>
+							<li>
+								<a href="#"><img src="../img/main/renewal/eng/bn03.jpg" alt="information banner03"/></a>
+								<span class="bnr_title">Astronomical Space</span>
+							</li>
+							<li>
+								<a href="#"><img src="../img/main/renewal/eng/bn04.jpg" alt="information banner04"/></a>
+								<span class="bnr_title">Nature History Hall</span>
+							</li>
+							<li>
+								<a href="#"><img src="../img/main/renewal/eng/bn05.jpg" alt="information banner05"/></a>
+								<span class="bnr_title">Korea Science Civilization</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div><!-- //#content-body-->	
+		<!-- //Mid -->
+		
+		<!-- footer -->
+		<div id="footer" class="new">
+			<div class="top"></div>	
+					
+			<div class="bottom">
+				<div class="main_contents innerWrap">
+					<div class="ft_logo"><img src="../img/footer_logo_en.png" alt="국립과천과학관"/></div>
+					<div class="ft_link">
+						<div class="address">
+							<strong>Time</strong>  9:30 am to 5:30 pm (Entry deadline 4:30 pm) <br/>
+							<strong>Closed day</strong>  Closed on Mondays, January 1, Lunar New Year&lsquo;s, and Chuseok Holiday<br/><br/>
+							<strong>Address</strong>  13817 Gwacheon 110 Gwacheon Science Museum <br/>
+							<strong>Telephone</strong>  02-3677-1500   <strong style="margin-left: 10px;">Fax</strong>  02-3677-1328
+						</div>
+						<div class="copyright">COPYRIGHT (C) Science Museum Association. All rights reserved.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->		
+	</div>
+	<!-- //#layout_cont -->
+	</body>
+</html>

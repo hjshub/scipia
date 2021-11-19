@@ -1,0 +1,1266 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>국립과천과학관 - 메인개편</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	
+	<!--S css-->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<!--E css-->
+
+	<!-- base URL for script -->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	
+	<!--S js-->
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/gnb.js"></script>
+	<!--E js-->
+	</head>
+
+	<body>
+	
+	<!--skipNavigation-->
+	<dl id="skipToContent">
+		<dt class="hiddenTxt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#content-body">본문으로 바로가기</a></dd>
+		<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+	</dl>
+	
+	<!-- Top -->
+	<!--s m_subMenu-->
+	<div id="m_subMenu">
+		<div class="mobile_gnb">
+			<div class="m_logoArea"><img src="../img/main_a/logo_kr.png" alt="로고"/></div>
+			<div class="m_menu on" onclick="M_menuOn('off');">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<a class="smartGuide" href="#">스마트관람안내</a>
+		</div>
+		<ul class="m_log innerWrap">
+			<li><a href="#">로그인</a></li>
+			<li><a href="#">회원가입</a></li>
+			<!-- 
+			<li><a href="#">로그아웃</a></li>
+			<li><a href="#">마이페이지</a></li>
+			 -->
+		</ul>
+		<div class="m_search">
+			<span class="search">
+				<form id="totalSearchForm2" action="/" method="GET">
+					<input id="searchKey2" name="searchKey2" type="hidden"/>
+					<label for="totalSearchText2" id="total-search2">
+						<input id="totalSearchText2" type="text" title="국립과천과학관 관련 검색어 입력" placeholder="검색어를 입력하세요."/>
+					</label>
+					<button type="button" class="btn_search">검색</button>
+				</form>
+			</span>
+		</div>
+		<ul class="m-cate-list">
+			<li class="active">
+				<span>관람안내</span>
+				<ul class="m_sub01">
+					<li class="active">
+						<a class="isList" href="#">이용안내</a>
+						<ul>
+							<li><a href="#">관람시간 및 요금</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">회원제 안내</a>
+						<ul>
+							<li><a href="#">연간회원</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">시설안내</a>
+						<ul>
+							<li><a href="#">시설대관</a></li>
+							<li><a href="#">편의시설</a></li>
+							<li><a href="#">식음시설</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">단체관람</a></li>
+					<li><a class="isList" href="#">추천관람코스</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>전시관</span>
+				<ul class="m_sub02">
+					<li><a class="isList" href="#">기초과학관</a></li>
+					<li><a class="isList" href="#">자연사관</a></li>
+					<li>
+						<a class="isList" href="#">한국과학문명관</a>
+						<ul>
+							<li><a href="#">한국과학문명관</a></li>
+							<li><a href="#">명예의 전당</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">첨단기술관</a></li>
+					<li><a class="isList" href="#">미래상상SF관</a></li>
+					<li><a class="isList" href="#">어린이탐구체험관</a></li>
+					<li>
+						<a class="isList" href="#">천체관</a>
+						<ul>
+							<li><a href="#">천체투영관</a></li>
+							<li><a href="#">천체관측소</a></li>
+							<li><a href="#">스페이스월드</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">곤충생태관</a>
+						<ul>
+							<li><a href="#">곤충생태관</a></li>
+							<li><a href="#">자연생태공원</a></li>
+							<li><a href="#">공룡역사광장</a></li>
+							<li><a href="#">옥외전시장</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">전시해설</a>
+						<ul>
+							<li><a href="#">예약&#x2F;안내</a></li>
+							<li><a href="#">과학해설사소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">체험전시실</a>
+						<ul>
+							<li><a href="#">전시관별 예약안내</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>교육</span>
+				<ul class="m_sub03">
+					<li>
+						<a class="isList" href="#">이용안내</a>
+						<ul>
+							<li><a href="#">교육안내</a></li>
+							<li><a href="#">교육공지</a></li>
+							<li><a href="#">수업게시판</a></li>
+							<li><a href="#">환불안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">청소년개인과정</a>
+						<ul>
+							<li><a href="#">창의과학아카데미</a></li>
+							<li><a href="#">방학특별과정</a></li>
+							<li><a href="#">천문우주융합교실</a></li>
+							<li><a href="#">코스모스쿨</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">청소년단체과정</a>
+						<ul>
+							<li><a href="#">창의과학 체험활동</a></li>
+							<li><a href="#">진로탐구 자유학기</a></li>
+							<li><a href="#">천문우주 자유학기</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">성인과정</a>
+						<ul>
+							<li><a href="#">청춘과학아카데미</a></li>
+							<li><a href="#">학부모과학 아카데미</a></li>
+							<li><a href="#">학부모과학산책</a></li>
+							<li><a href="#">교사연수</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">체험캠프</a>
+						<ul>
+							<li><a href="#">과학희망캠프</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>행사</span>
+				<ul class="m_sub04">
+					<li><a class="isList" href="#">행사</a></li>
+					<li><a class="isList" href="#">특별기획전</a></li>
+					<li><a class="isList" href="#">공연</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>예약</span>
+				<ul class="m_sub05">
+					<li><a class="isList" href="#">교육</a></li>
+					<li><a class="isList" href="#">체험</a></li>
+					<li><a class="isList" href="#">행사</a></li>
+					<li><a class="isList" href="#">천체</a></li>
+					<li><a class="isList" href="#">창작카페</a></li>
+					<li><a class="isList" href="#">자원봉사</a></li>
+					<li><a class="isList" href="#">연간회원전용</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>고객소통</span>
+				<ul class="m_sub06">
+					<li>
+						<a class="isList" href="#">과학관소식</a>
+						<ul>
+							<li><a href="#">공지&#x2F;공고</a></li>
+							<li><a href="#">카드뉴스</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="#">현장스케치</a></li>
+							<li><a href="#">과학관동영상</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">고객서비스</a>
+						<ul>
+							<li><a href="#">고객서비스현장</a></li>
+							<li><a href="#">평가결과</a></li>
+							<li><a href="#">연간방문객</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">안전관리</a>
+						<ul>
+							<li><a href="#">관람객대피</a></li>
+							<li><a href="#">안전사고수칙</a></li>
+							<li><a href="#">안전신문고</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">정보나눔터</a>
+						<ul>
+							<li><a href="#">일반자료실</a></li>
+							<li><a href="#">규정자료실</a></li>
+							<li><a href="#">자주묻는질문</a></li>
+							<li><a href="#">의견수렴</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">전자민원</a></li>
+					<li><a class="isList" href="#">분실물목록</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>과학관소개</span>
+				<ul class="m_sub07">
+					<li>
+						<a class="isList" href="#">기관안내</a>
+						<ul>
+							<li><a href="#">관장소개</a></li>
+							<li><a href="#">연혁</a></li>
+							<li><a href="#">조직 및 업무</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="isList" href="#">찾아오시는 길</a>
+						<ul>
+							<li><a href="#">교통안내</a></li>
+							<li><a href="#">주차안내</a></li>
+						</ul>
+					</li>
+					<li><a class="isList" href="#">주변정보</a></li>
+					<li><a class="isList" href="#">관련사이트</a></li>
+					<li><a class="isList" href="#">과학과기술사료관</a></li>
+					<li><a class="isList" href="#">사이트맵</a></li>
+					<li><a class="isList" href="#">수도권과학관</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>정보공개</span>
+				<ul class="m_sub08">
+					<li><a class="isList" href="#">정보공개제도안내</a></li>
+					<li><a class="isList" href="#">사전정보공개</a></li>
+					<li><a class="isList" href="#">정보목록</a></li>
+					<li><a class="isList" href="#">정보공개창구</a></li>
+					<li><a class="isList" href="#">공공데이터 개방</a></li>
+					<li><a class="isList" href="#">공개정보자료실</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>과학자료실</span>
+			</li>
+		</ul>
+		<div class="m-quick-list">
+			<ul class="innerWrap">
+				<li class="m-sns-link">
+					<a href="http://nsm2010.blog.me/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_naver"><em class="hiddenTxt">네이버 블로그 바로가기</em></a>
+					<a href="https://twitter.com/scientorium?lang=ko" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_twitter"><em class="hiddenTxt">트위터 바로가기</em></a>
+					<a href="https://www.facebook.com/scientorium/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_facebook"><em class="hiddenTxt">페이스북 바로가기</em></a>
+					<a href="https://www.youtube.com/user/gnsmscience" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_utube"><em class="hiddenTxt">유튜브 바로가기</em></a>
+				</li>
+				<li>
+					<a href="#">ENG</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--E m_subMenu-->	
+	
+	<div id="layout_cont">
+		<!--S #navTop--> 
+		<header id="navTop" class="innerWrap">
+		 	<div id="topArea">
+		 		<!--S topMenu-->
+				<div class="topMenu innerWrap">						
+					<div class="hgroup01 innerWrap">
+						<div class="topWrapper">
+							<ul class="log innerWrap">
+								<li>
+									<div class="basic-text hidden-xs">
+										미래를 상상하며 행복을 주는 "과학체험관"
+									</div>
+								</li>
+								<li>								
+									<form id="logout-form" action="${logoutUrl}" method="post" style="display: none">
+									  <input type="submit" value="Log out" />
+									  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+									</form>
+									<!--
+									<a href="#" id="logout-btn">로그아웃</a>
+									<a href="#">마이페이지</a>
+									-->
+									<a href="#">회원가입</a>
+									<a href="#">로그인</a>
+									<a href="#">사이트맵</a>
+									<a href="#">ENG</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hgroup02 innerWrap">
+						<div class="topWrapper">
+							<div class="logoArea"><a href="https://www.sciencecenter.go.kr/scipia/"><img src="../img/main_a/logo_kr.png" alt="로고"/></a></div>
+							<span class="search">
+								<form id="totalSearchForm" action="${totalSearchUrl }" method="GET">
+									<input id="searchKey" name="searchKey" type="hidden" />
+									<label for="totalSearchText" id="total-search">
+										<input id="totalSearchText" type="text" title="국립과천과학관 관련 검색어 입력" placeholder="검색어를 입력하세요."/>
+									</label>
+									<button type="button" class="btn_search"><em class="hiddenTxt">검색</em></button>
+								</form>
+							</span>
+							<div class="sns-link">
+								<a href="http://nsm2010.blog.me/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_naver">
+									<img src="../img/main/renewal/ico_blog.png" alt="Naver Blog"/>
+								</a>
+								<a href="https://twitter.com/scientorium?lang=ko" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_twitter">
+									<img src="../img/main/renewal/ico_twitter.png" alt="Twitter"/>
+								</a>
+								<a href="https://www.facebook.com/scientorium/" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_facebook">
+									<img src="../img/main/renewal/ico_facebook.png" alt="Facebook"/>
+								</a>
+								<a href="https://www.youtube.com/user/gnsmscience" target="_blank" title="새창 열기" rel="noopener noreferrer" class="btn_utube">
+									<img src="../img/main/renewal/ico_ytube.png" alt="youtube"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--E topMenu-->
+									
+				<div class="nav-wrapper">
+					<!--S defaultWeb-->
+				 	<div class="topWrapper defaultWeb" id="gnb">
+				 		<div class="list_bg"></div>
+						<ul class="cate-list innerWrap">
+							<li>
+								<a class="listName" href="#">관람안내</a>
+								<div class="sub01">
+									<ul>
+										<li><span><a href="#">이용안내</a></span></li>
+										<li><span><a href="#">회원제 안내</a></span></li>
+										<li><span><a href="#">시설안내</a></span></li>
+										<li><span><a href="#">단체관람</a></span></li>
+										<li><span><a href="#">추천관람코스</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">전시관</a>
+								<div class="sub02">
+									<ul>
+										<li><span><a class="evScroll"href="#contents01">기초관학관</a></span></li>
+										<li><span><a href="#">자연사관</a></span></li>
+										<li><span><a href="#">한국과학문명관</a></span></li>
+										<li><span><a href="#">첨단기술관</a></span></li>
+										<li><span><a href="#">미래상상SF관</a></span></li>
+										<li><span><a href="#">어린이탐구체험관</a></span></li>
+										<li><span><a href="#">천체관</a></span></li>
+										<li><span><a href="#">곤충생태관</a></span></li>
+										<li><span><a href="#">전시해설</a></span></li>
+										<li><span><a href="#">체험전시물</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">교육</a>
+								<div class="sub03">
+									<ul>
+										<li><span><a href="#">이용안내</a></span></li>
+										<li><span><a href="#">청소년개인과정</a></span></li>
+										<li><span><a href="#">청소년단체과정</a></span></li>
+										<li><span><a href="#">성인과정</a></span></li>
+										<li><span><a href="#">체험캠프</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">행사</a>
+								<div class="sub04">
+									<ul>
+										<li><span><a href="#">행사</a></span></li>
+										<li><span><a href="#">특별기획전</a></span></li>
+										<li><span><a href="#">공연</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">예약</a>
+								<div class="sub05">
+									<ul>
+										<li><span><a href="#">교육</a></span></li>
+										<li><span><a href="#">체험</a></span></li>
+										<li><span><a href="#">행사</a></span></li>
+										<li><span><a href="#">천체</a></span></li>
+										<li><span><a href="#">창작카페</a></span></li>
+										<li><span><a href="#">자원봉사</a></span></li>
+										<li><span><a href="#">연간회원전용</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">고객소통</a>
+								<div class="sub06">
+									<ul>
+										<li><span><a href="#">과학관소식</a></span></li>
+										<li><span><a href="#">고객서비스</a></span></li>
+										<li><span><a href="#">안전관리</a></span></li>
+										<li><span><a href="#">정보나눔터</a></span></li>
+										<li><span><a href="#">전자민원</a></span></li>
+										<li><span><a href="#">분실물목록</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">과학관소개</a>
+								<div class="sub07">
+									<ul>
+										<li><span><a href="#">기관안내</a></span></li>
+										<li><span><a href="#">찾아오시는길</a></span></li>
+										<li><span><a href="#">주변정보</a></span></li>
+										<li><span><a href="#">관련사이트</a></span></li>
+										<li><span><a href="#">과학과기술사료관</a></span></li>
+										<li><span><a href="#">사이트맵</a></span></li>
+										<li><span><a href="#">수도권과학관</a></span></li>
+										
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">정보공개</a>
+								<div class="sub08">
+									<ul>
+										<li><span><a href="#">정보공개제도안내</a></span></li>
+										<li><span><a href="#">사전정보공개</a></span></li>
+										<li><span><a href="#">정보목록</a></span></li>
+										<li><span><a href="#">정보공개청구</a></span></li>
+										<li><span><a href="#">공공데이터 개방</a></span></li>
+										<li><span><a href="#">공개정보자료실</a></span></li>
+										<li><span><a href="#">정책연구자료실</a></span></li>
+									</ul>
+								</div>	
+							</li>
+							<li>
+								<a class="listName" href="#">과학자료실</a>
+							</li>
+						</ul>
+					</div> 
+					<!--E defaultWeb-->
+					<div class="mobile_gnb">
+						<div class="m_logoArea"><img src="../img/main_a/logo_kr.png" alt="로고"/></div>
+						<div class="m_menu" onclick="M_menuOn('on');">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a class="smartGuide" href="#">스마트관람안내</a>
+					</div>					
+				</div>
+			</div>	
+			<!--topArea END-->		
+		</header>
+		<!--E #navTop--> 
+		
+		<script>
+			// keyword search
+			/*
+			$("#totalSearchText").keypress( function(e) {
+				var keyCode = (event.keyCode ? event.keyCode : event.which);
+				if( keyCode == '13') {
+					var searchText = $(this).val();
+					$('#searchKey').val(searchText);
+					$("form[id='totalSearchForm']").submit();
+				}
+			});
+			*/
+		</script>	
+		<!-- //Top -->
+		
+		<!-- Mid -->
+		<div id="content-body">
+			<section class="section01">
+				<div class="main_contents playController3">
+					<!-- 메인배너 -->
+					<div class="mainBnr">
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr01.jpg" alt="메인배너 1"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr02.jpg" alt="메인배너 2"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr03.jpg" alt="메인배너 3"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr04.jpg" alt="메인배너 4"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr05.jpg" alt="메인배너 5"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr06.jpg" alt="메인배너 6"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr07.jpg" alt="메인배너 7"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+						<div class="thumNail">
+							<a href="#"><img src="../img/main/renewal/main_bnr08.jpg" alt="메인배너 8"/></a>
+							<span class="ev_info">
+								<strong class="title">재미있는 과학놀이<br/>콘텐츠 경진대회</strong>
+								<a href="#" class="btn_more">자세히 보기</a>
+							</span>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<section class="section02">
+				<div class="pos_fixed">
+					<div class="main_contents">
+						<ul>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico01.png" alt="퀵 아이콘01"/></a></span>
+								<em><a href="#">개관안내</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico02.png" alt="퀵 아이콘02"/></a></span>
+								<em><a href="#">찾아오시는 길</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico03.png" alt="퀵 아이콘03"/></a></span>
+								<em><a href="#">예약하기</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico04.png" alt="퀵 아이콘04"/></a></span>
+								<em><a href="#">단체관람안내</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico05.png" alt="퀵 아이콘05"/></a></span>
+								<em><a href="#">연간회원가입</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico06.png" alt="퀵 아이콘06"/></a></span>
+								<em><a href="#">자원봉사신청</a></em>
+							</li>
+							<li>
+								<span class="icon"><a href="#"><img src="../img/main/renewal/quick_ico07.png" alt="퀵 아이콘07"/></a></span>
+								<em><a href="#">사이버과학관</a></em>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</section>
+			<section class="section03">
+				<div class="main_contents">
+					<div class="schedule">
+						<h2 class="caption">현재일정</h2>
+						<span class="description">2019 국립과천과학관 전체일정 입니다.</span>
+						<ul>
+							<li>
+								<a href="#">
+									<span>이달일정</span>
+									<span class="schDay"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>연간일정</span>
+									<span class="schYear"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tabArea">
+						<div class="tabMenu">
+							<span class="selected"><a href="#contents01">전시</a></span>
+							<div id="contents01" class="tabContents">
+								<div class="tabslide type_number" id="tabSlide01">
+									<!--Slidelist_no.1-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum4.jpg" alt="이벤트 썸네일4"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum5.jpg" alt="이벤트 썸네일5"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum6.jpg" alt="이벤트 썸네일6"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+									
+									<!--Slidelist_no.2-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum4.jpg" alt="이벤트 썸네일4"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum5.jpg" alt="이벤트 썸네일5"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum6.jpg" alt="이벤트 썸네일6"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+									
+									<!--Slidelist_no.3-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum4.jpg" alt="이벤트 썸네일4"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum5.jpg" alt="이벤트 썸네일5"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum6.jpg" alt="이벤트 썸네일6"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div><!--//#tabSlide01-->
+							</div>	
+							<span><a href="#contents02">교육</a></span>
+							<div id="contents02" class="tabContents">
+								<div class="tabslide type_number" id="tabSlide02">
+									<!--Slidelist_no.1-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum4.jpg" alt="이벤트 썸네일4"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum5.jpg" alt="이벤트 썸네일5"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum6.jpg" alt="이벤트 썸네일6"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+									
+									<!--Slidelist_no.2-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum4.jpg" alt="이벤트 썸네일4"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum5.jpg" alt="이벤트 썸네일5"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum6.jpg" alt="이벤트 썸네일6"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+									
+									<!--Slidelist_no.3-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum4.jpg" alt="이벤트 썸네일4"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum5.jpg" alt="이벤트 썸네일5"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum6.jpg" alt="이벤트 썸네일6"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div><!--//#tabSlide02-->
+							</div>
+							<span><a href="#contents03">행사</a></span>
+							<div id="contents03" class="tabContents">
+								<div class="tabslide type_number" id="tabSlide03">
+									<!--Slidelist_no.1-->
+									<div>
+										<ul class="innerWrap evList">
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum1.jpg" alt="이벤트 썸네일1"/></a><//span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum2.jpg" alt="이벤트 썸네일2"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+											<li>
+												<span class="ev_thumnail"><a href="#"><img src="../img/main/renewal/tab01_thum3.jpg" alt="이벤트 썸네일3"/></a></span>
+												<span class="dirLink">
+													<a href="#">상세보기</a>
+													<a href="#">홈페이지</a>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div><!--//#tabSlide03-->
+							</div>
+							<span><a href="#contents04">천체</a></span>
+							<div id="contents04" class="tabContents">
+								<div class="tabslide type_number" id="tabSlide04">
+									<!--행사리스트 없는 경우-->
+									<div><p class="none">&ldquo;현재 진행중인 행사가 없습니다.&rdquo;</p></div>
+								</div><!--//#tabSlide04-->
+							</div>
+							<span><a href="#contents05">해설</a></span>
+							<div id="contents05" class="tabContents">
+								<div class="tabslide type_number" id="tabSlide05">
+									<!--행사리스트 없는 경우-->
+									<div><p class="none">&ldquo;현재 진행중인 행사가 없습니다.&rdquo;</p></div>
+								</div><!--//#tabSlide05-->
+							</div>
+							<div class="moveTab"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section04">
+				<div class="main_contents">
+					<!-- 메인 게시판 -->
+					<div class="boardArea">
+						<ul class="boardTap innerWrap">
+							<li>
+								<a href="javascript:void(0);" class="selected" onclick="boardView('notice01',this);">공지사항</a>
+								<div class="notice01">
+									<ul>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집 2019 여름학기 학부모 과학 아카데미 수강생 모집 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+									</ul>
+									<a href="#" class="btnMore"><em class="hiddenTxt">공지사항 더 보기</em></a>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);" onclick="boardView('news',this);">카드뉴스</a>
+								<div class="news">
+									<ul>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+									</ul>
+									<a href="#" class="btnMore"><em class="hiddenTxt">카드뉴스 더 보기</em></a>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);" onclick="boardView('notice02',this);">보도자료</a>
+								<div class="notice02">
+									<ul>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+									</ul>
+									<a href="#" class="btnMore"><em class="hiddenTxt">보도자료 더 보기</em></a>
+								</div>	
+							</li>
+							<li>
+								<a href="javascript:void(0);" onclick="boardView('career',this);">채용정보</a>
+								<div class="career">
+									<ul>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+									</ul>
+									<a href="#" class="btnMore"><em class="hiddenTxt">채용정보 더 보기</em></a>
+								</div>	
+							</li>
+							<li>
+								<a href="javascript:void(0);" onclick="boardView('sketch',this);">현장스케치</a>
+								<div class="sketch">
+									<ul>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+										<li>
+											<span class="title"><a href="#">[여름방학특집] 2019 여름학기 학부모 과학 아카데미 수강생 모집</a></span>
+											<span class="date"><a href="#">2020.01.01</a></span>
+										</li>
+									</ul>
+									<a href="#" class="btnMore"><em class="hiddenTxt">현장스케치 더 보기</em></a>
+								</div>	
+							</li>
+						</ul>
+					</div>
+					<div class="bannerArea playController1">
+						<div class="ev_bnr type_dot">
+							<div>
+								<a href="#"><img src="../img/main/renewal/ev_bnr01.jpg" alt="중단 이벤트 배너01"/></a>
+							</div>
+							<div>
+								<a href="#"><img src="../img/main/renewal/ev_bnr01.jpg" alt="중단 이벤트 배너02"/></a>
+							</div>
+							<div>
+								<a href="#"><img src="../img/main/renewal/ev_bnr01.jpg" alt="중단 이벤트 배너03"/></a>
+							</div>
+							<div>
+								<a href="#"><img src="../img/main/renewal/ev_bnr01.jpg" alt="중단 이벤트 배너04"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section05">
+				<div class="main_contents playController2">
+					<!-- 하단 이벤트 배너 영역 -->		
+					<div class="ft_bnr type_dot">
+						<div>
+							<ul class="innerWrap etc_evList">
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr01.jpg" alt="하단 이벤트 배너01"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr02.jpg" alt="하단 이벤트 배너02"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr03.jpg" alt="하단 이벤트 배너03"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr04.jpg" alt="하단 이벤트 배너04"/></a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="innerWrap etc_evList">
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr01.jpg" alt="하단 이벤트 배너01"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr02.jpg" alt="하단 이벤트 배너02"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr03.jpg" alt="하단 이벤트 배너03"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr04.jpg" alt="하단 이벤트 배너04"/></a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="innerWrap etc_evList">
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr01.jpg" alt="하단 이벤트 배너01"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr02.jpg" alt="하단 이벤트 배너02"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr03.jpg" alt="하단 이벤트 배너03"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr04.jpg" alt="하단 이벤트 배너04"/></a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="innerWrap etc_evList">
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr01.jpg" alt="하단 이벤트 배너01"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr02.jpg" alt="하단 이벤트 배너02"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr03.jpg" alt="하단 이벤트 배너03"/></a></li>
+								<li><a href="#"><img src="../img/main/renewal/ft_bnr04.jpg" alt="하단 이벤트 배너04"/></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div><!-- //#content-body-->	
+		<!-- //Mid -->
+		
+		<!-- footer -->
+		<div id="footer" class="new">
+			<div class="top">
+				<div class="main_contents">
+					<ul>
+						<li><a href=#>이용약관</a></li>
+						<li><a href=#>개인정보 처리방침</a></li>
+						<li><a href=#>이메일 무단수신거부</a></li>
+					</ul>
+				</div>
+			</div>	
+					
+			<div class="bottom">
+				<div class="main_contents innerWrap">
+					<div class="ft_logo"><img src="../img/footer_logo_kr.png" alt="국립과천과학관"/></div>
+					<div class="ft_link">
+						<div class="address">
+							<strong>주소</strong>  13817 경기도 과천시 상하벌로 110 국립과천과학관 <br>
+							<strong>대표전화</strong>  02-3677-1500   <strong style="margin-left: 10px;">Fax</strong>  02-3677-1328
+						</div>
+						<div class="copyright">COPYRIGHT (C) Science Museum Association. All rights reserved.</div>
+					</div>
+					<div class="related_link">
+						<div class="familySite isDropDown">
+							<a href="#">관련 사이트 이동</a>
+							<ul>
+								<li>
+									<a href="http://www.president.go.kr" target="_blank" rel="noopener noreferrer" title="청와대 사이트 이동">청와대</a>
+								</li>
+								<li>
+									<a href="http://www.msit.go.kr" target="_blank" rel="noopener noreferrer" title="과학기술정보통신부 사이트 이동">과학기술정보통신부</a>
+								</li>
+								<li>
+									<a href="http://www.science.go.kr" target="_blank" rel="noopener noreferrer" title="국립중앙과학관 사이트 이동">국립중앙과학관</a>
+								</li>
+								<li>
+									<a href="http://www.csc.go.kr" target="_blank" rel="noopener noreferrer" title="국립어린이과학관 사이트 이동">국립어린이과학관</a>
+								</li>
+								<li>
+									<a href="http://www.sciencemuseum.or.kr" target="_blank" rel="noopener noreferrer" title="전국과학관길라잡이 사이트 이동">전국과학관길라잡이</a>
+								</li>
+								<li>
+									<a href="http://www.nssc.go.kr" target="_blank" rel="noopener noreferrer" title="원자력안전위원회 사이트 이동">원자력안전위원회</a>
+								</li>
+								<li>
+									<a href="http://www.copyright.or.kr" target="_blank" rel="noopener noreferrer" title="한국저작권위원회 사이트 이동">한국저작권위원회</a>
+								</li>
+								<li>
+									<a href="http://www.ibs.re.kr" target="_blank" rel="noopener noreferrer" title="기초과학연구원 사이트 이동">기초과학연구원</a>
+								</li>
+								<li>
+									<a href="http://www.isbb.or.kr" target="_blank" rel="noopener noreferrer" title="국제과학비지니스벨트 사이트 이동">국제과학비지니스벨트</a>
+								</li>
+								<li>
+									<a href="http://www.ntis.go.kr" target="_blank" rel="noopener noreferrer" title="국가과학기술지식정보서비스 사이트 이동">국가과학기술지식정보서비스</a>
+								</li>
+								<li>
+									<a href="http://www.now.go.kr" target="_blank" rel="noopener noreferrer" title="과학기술정책정보서비스 사이트 이동">과학기술정책정보서비스</a>
+								</li>
+								<li>
+									<a href="http://www.korea.kr/newsWeb/index.jsp" target="_blank" rel="noopener noreferrer" title="정책브리핑 사이트 이동">정책브리핑</a>
+								</li>
+								<li>
+									<a href="https://www.ibs.re.kr/eng.do" target="_blank" rel="noopener noreferrer" title="Institute for Basic Science 사이트 이동">Institute for Basic Science</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->		
+	</div>
+	<!-- //#layout_cont -->
+	</body>
+</html>
